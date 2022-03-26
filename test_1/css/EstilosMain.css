@@ -1,0 +1,130 @@
+﻿body {
+    margin:0;
+    background: #F5F1F0;
+}
+
+.container {
+    min-height:calc(100vh - 100px - 300px);
+    width:965px;
+    background: white;
+    margin: auto;
+}
+
+.menu {
+    float: right;
+}
+.img-logo {
+    border-radius:4px;
+    width:4%;
+    margin: 10px;
+}
+    .menu li {
+        display:inline-block;
+    }
+
+    .menu li a{
+        color: black;
+        text-decoration: none;
+        padding: 30px;
+    }
+
+        .menu li a:hover {
+            background: #FFD871;
+        }
+
+.col {
+    width: 200px;
+    display: inline-block;
+    vertical-align:top;
+    text-align:justify;
+    padding:20px;
+}
+
+.col h2{
+    font-family:serif;
+    line-height:1.5em;
+}
+
+.col img{
+    margin:auto;
+}
+
+.row {
+    text-align:center;
+}
+
+.footer {
+    height:80px;
+    overflow:hidden;
+}
+
+.consultas {
+margin-left:10px;
+}
+
+.imgban {
+    width:100%;
+}
+
+.img-col {
+    width:200px;
+    height:200px;
+}
+
+footer {
+    align-self:flex-start;
+    bottom:0;
+    left:0;
+    right:0;
+    background:#111;
+    height:auto;
+    width:100%;
+    font-family:'Open Sans';
+    padding-top:40px;
+    color:#fff;
+}
+
+.footer-content {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    text-align:center;
+}
+
+.footer-content h3{
+    font-size:1.8rem;
+    font-weight:400;
+    text-transform:capitalize;
+    line-height:3rem;
+}
+
+.footer-content p{
+    max-width:500px;
+    margin: 10px auto;
+    line-height:28px;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    background:#000;
+    width: 100%;
+    padding:20px 0;
+    text-align:center;
+}
+
+.footer-bottom p{
+    font-size:14px;
+    word-spacing:2px;
+    text-transform:capitalize;
+}
+
+    .footer-bottom span {
+        text-transform:uppercase;
+        opacity:.4;
+        font-weight:200;
+    }
+
+h1 {
+align-content:center;
+}

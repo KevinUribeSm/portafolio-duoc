@@ -1,0 +1,10 @@
+C:\Users\franc\Desktop\portafolio de titulo\proyecto\WEB\test_1\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\franc\Desktop\portafolio de titulo\proyecto\WEB\test_1\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\franc\Desktop\portafolio de titulo\proyecto\WEB\test_1\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\franc\Desktop\portafolio de titulo\proyecto\WEB\test_1\CapaDatos\bin\Debug\EntityFramework.dll
+C:\Users\franc\Desktop\portafolio de titulo\proyecto\WEB\test_1\CapaDatos\bin\Debug\EntityFramework.xml
+C:\Users\franc\Desktop\portafolio de titulo\proyecto\WEB\test_1\CapaDatos\obj\Debug\CapaEntidades.csproj.AssemblyReference.cache
+C:\Users\franc\Desktop\portafolio de titulo\proyecto\WEB\test_1\CapaDatos\obj\Debug\CapaEntidades.csproj.CoreCompileInputs.cache
+C:\Users\franc\Desktop\portafolio de titulo\proyecto\WEB\test_1\CapaDatos\obj\Debug\CapaEntidades.csproj.CopyComplete
+C:\Users\franc\Desktop\portafolio de titulo\proyecto\WEB\test_1\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\franc\Desktop\portafolio de titulo\proyecto\WEB\test_1\CapaDatos\obj\Debug\CapaDatos.pdb

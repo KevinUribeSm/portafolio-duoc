@@ -1,0 +1,7 @@
+C:\Users\franc\Desktop\portafolio de titulo\proyecto\WEB\test_1\CapaConexion\obj\Debug\CapaConexion.csproj.CoreCompileInputs.cache
+C:\Users\franc\Desktop\portafolio de titulo\proyecto\WEB\test_1\CapaConexion\bin\Debug\CapaConexion.dll
+C:\Users\franc\Desktop\portafolio de titulo\proyecto\WEB\test_1\CapaConexion\bin\Debug\CapaConexion.pdb
+C:\Users\franc\Desktop\portafolio de titulo\proyecto\WEB\test_1\CapaConexion\bin\Debug\Oracle.DataAccess.dll
+C:\Users\franc\Desktop\portafolio de titulo\proyecto\WEB\test_1\CapaConexion\obj\Debug\CapaConexion.csproj.CopyComplete
+C:\Users\franc\Desktop\portafolio de titulo\proyecto\WEB\test_1\CapaConexion\obj\Debug\CapaConexion.dll
+C:\Users\franc\Desktop\portafolio de titulo\proyecto\WEB\test_1\CapaConexion\obj\Debug\CapaConexion.pdb

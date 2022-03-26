@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="11.2" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CARGO">
+    <Key>
+      <PropertyRef Name="ID_CARGO" />
+    </Key>
+    <Property Name="ID_CARGO" Type="varchar2" MaxLength="20" Nullable="false" />
+    <Property Name="NOM_CARGO" Type="varchar2" MaxLength="50" Nullable="false" />
+    <Property Name="ESTADO_CARGO" Type="varchar2" MaxLength="20" Nullable="false" />
+    <Property Name="RUT_EMPRESA" Type="varchar2" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EMPRESA">
+    <Key>
+      <PropertyRef Name="RUT_EMPRESA" />
+    </Key>
+    <Property Name="RUT_EMPRESA" Type="varchar2" MaxLength="20" Nullable="false" />
+    <Property Name="NOMBRE_EMPRESA" Type="varchar2" MaxLength="50" Nullable="false" />
+    <Property Name="ESTADO_EMPRESA" Type="varchar2" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PERFILAMIENTO">
+    <Key>
+      <PropertyRef Name="ID_PERFIL" />
+    </Key>
+    <Property Name="ID_PERFIL" Type="varchar2" MaxLength="20" Nullable="false" />
+    <Property Name="ESTADO_PERFIL" Type="varchar2" MaxLength="20" Nullable="false" />
+    <Property Name="ID_ROL" Type="varchar2" MaxLength="20" Nullable="false" />
+    <Property Name="ID_CARGO" Type="varchar2" MaxLength="20" Nullable="false" />
+    <Property Name="RUT_EMPRESA" Type="varchar2" MaxLength="20" Nullable="false" />
+    <Property Name="ID_PRIVILEGIO" Type="varchar2" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PRIVILEGIO">
+    <Key>
+      <PropertyRef Name="ID_PRIVILEGIO" />
+    </Key>
+    <Property Name="ID_PRIVILEGIO" Type="varchar2" MaxLength="20" Nullable="false" />
+    <Property Name="NOM_PRIVILEGIO" Type="varchar2" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PROCESO">
+    <Key>
+      <PropertyRef Name="ID_PROCESO" />
+    </Key>
+    <Property Name="ID_PROCESO" Type="varchar2" MaxLength="20" Nullable="false" />
+    <Property Name="NOM_PROCESO" Type="varchar2" MaxLength="50" Nullable="false" />
+    <Property Name="DESC_PROCESO" Type="varchar2" MaxLength="300" Nullable="false" />
+    <Property Name="FECHA_INICIO" Type="date" Nullable="false" />
+    <Property Name="FECHA_FIN" Type="date" Nullable="false" />
+    <Property Name="ESTADO_PROCESO" Type="varchar2" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="REPORTE_INCIDENCIA">
+    <Key>
+      <PropertyRef Name="ID_REPORTE" />
+    </Key>
+    <Property Name="ID_REPORTE" Type="varchar2" MaxLength="20" Nullable="false" />
+    <Property Name="OBSERVACION_INCIDENCIA" Type="varchar2" MaxLength="300" Nullable="false" />
+    <Property Name="FECHA_INCIDENCIA" Type="date" Nullable="false" />
+    <Property Name="HORA_INCIDENCIA" Type="date" Nullable="false" />
+    <Property Name="TAREA_ID_TAREA" Type="varchar2" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ROL">
+    <Key>
+      <PropertyRef Name="ID_ROL" />
+    </Key>
+    <Property Name="ID_ROL" Type="varchar2" MaxLength="20" Nullable="false" />
+    <Property Name="NOM_ROL" Type="varchar2" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TAREA">
+    <Key>
+      <PropertyRef Name="ID_TAREA" />
+    </Key>
+    <Property Name="ID_TAREA" Type="varchar2" MaxLength="20" Nullable="false" />
+    <Property Name="NOMBRE_TAREA" Type="varchar2" MaxLength="50" Nullable="false" />
+    <Property Name="FECHA_PROCESO" Type="date" Nullable="false" />
+    <Property Name="FECHA_FIN" Type="date" Nullable="false" />
+    <Property Name="DESCRIPCION_TAREA" Type="varchar2" MaxLength="300" Nullable="false" />
+    <Property Name="ADJUNTO" Type="varchar2" MaxLength="50" />
+    <Property Name="ESTADO_TAREA" Type="varchar2" MaxLength="20" Nullable="false" />
+    <Property Name="FECHA_TERMINO_REAL" Type="date" />
+    <Property Name="PORCENTAJE" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ID_PROCESO" Type="varchar2" MaxLength="20" Nullable="false" />
+    <Property Name="RUT" Type="varchar2" MaxLength="15" />
+    <Property Name="ID_SUB_TAREA" Type="varchar2" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="USUARIO">
+    <Key>
+      <PropertyRef Name="RUT" />
+    </Key>
+    <Property Name="RUT" Type="varchar2" MaxLength="15" Nullable="false" />
+    <Property Name="P_NOMBRE" Type="varchar2" MaxLength="50" Nullable="false" />
+    <Property Name="SE_NOMBRE" Type="varchar2" MaxLength="50" />
+    <Property Name="P_APELLIDO" Type="varchar2" MaxLength="50" Nullable="false" />
+    <Property Name="SE_APELLIDO" Type="varchar2" MaxLength="50" Nullable="false" />
+    <Property Name="TELEFONO" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="SEXO" Type="varchar2" MaxLength="10" Nullable="false" />
+    <Property Name="EMAIL" Type="varchar2" MaxLength="50" Nullable="false" />
+    <Property Name="CLAVE" Type="varchar2" MaxLength="20" Nullable="false" />
+    <Property Name="ESTADO_CUENTA" Type="varchar2" MaxLength="10" Nullable="false" />
+    <Property Name="ID_CARGO" Type="varchar2" MaxLength="20" Nullable="false" />
+    <Property Name="ROL_ID_ROL" Type="varchar2" MaxLength="20" Nullable="false" />
+    <Property Name="EMPRESA_RUT_EMPRESA" Type="varchar2" MaxLength="20" Nullable="false" />
+    <Property Name="RUT_JEFE" Type="varchar2" MaxLength="15" />
+  </EntityType>
+  <Association Name="CARGO_RUT_EMPRESA_FK">
+    <End Role="EMPRESA" Type="Self.EMPRESA" Multiplicity="1" />
+    <End Role="CARGO" Type="Self.CARGO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EMPRESA">
+        <PropertyRef Name="RUT_EMPRESA" />
+      </Principal>
+      <Dependent Role="CARGO">
+        <PropertyRef Name="RUT_EMPRESA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PERFILAMIENTO_EMPRESA_FK">
+    <End Role="EMPRESA" Type="Self.EMPRESA" Multiplicity="1" />
+    <End Role="PERFILAMIENTO" Type="Self.PERFILAMIENTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EMPRESA">
+        <PropertyRef Name="RUT_EMPRESA" />
+      </Principal>
+      <Dependent Role="PERFILAMIENTO">
+        <PropertyRef Name="RUT_EMPRESA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PERFILAMIENTO_PRIVILEGIO_FK">
+    <End Role="PRIVILEGIO" Type="Self.PRIVILEGIO" Multiplicity="1" />
+    <End Role="PERFILAMIENTO" Type="Self.PERFILAMIENTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRIVILEGIO">
+        <PropertyRef Name="ID_PRIVILEGIO" />
+      </Principal>
+      <Dependent Role="PERFILAMIENTO">
+        <PropertyRef Name="ID_PRIVILEGIO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="REPORTE_INCIDENCIA_TAREA_FK">
+    <End Role="TAREA" Type="Self.TAREA" Multiplicity="1" />
+    <End Role="REPORTE_INCIDENCIA" Type="Self.REPORTE_INCIDENCIA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TAREA">
+        <PropertyRef Name="ID_TAREA" />
+      </Principal>
+      <Dependent Role="REPORTE_INCIDENCIA">
+        <PropertyRef Name="TAREA_ID_TAREA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TAB_PERFILAMIENTO_CARGO_FK">
+    <End Role="CARGO" Type="Self.CARGO" Multiplicity="1" />
+    <End Role="PERFILAMIENTO" Type="Self.PERFILAMIENTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CARGO">
+        <PropertyRef Name="ID_CARGO" />
+      </Principal>
+      <Dependent Role="PERFILAMIENTO">
+        <PropertyRef Name="ID_CARGO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TAB_PERFILAMIENTO_ROL_FK">
+    <End Role="ROL" Type="Self.ROL" Multiplicity="1" />
+    <End Role="PERFILAMIENTO" Type="Self.PERFILAMIENTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ROL">
+        <PropertyRef Name="ID_ROL" />
+      </Principal>
+      <Dependent Role="PERFILAMIENTO">
+        <PropertyRef Name="ID_ROL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TAREA_PROCESO_FK">
+    <End Role="PROCESO" Type="Self.PROCESO" Multiplicity="1" />
+    <End Role="TAREA" Type="Self.TAREA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PROCESO">
+        <PropertyRef Name="ID_PROCESO" />
+      </Principal>
+      <Dependent Role="TAREA">
+        <PropertyRef Name="ID_PROCESO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TAREA_TAREA_FK">
+    <End Role="TAREA" Type="Self.TAREA" Multiplicity="0..1" />
+    <End Role="TAREA1" Type="Self.TAREA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TAREA">
+        <PropertyRef Name="ID_TAREA" />
+      </Principal>
+      <Dependent Role="TAREA1">
+        <PropertyRef Name="ID_SUB_TAREA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TAREA_USUARIO_FK">
+    <End Role="USUARIO" Type="Self.USUARIO" Multiplicity="0..1" />
+    <End Role="TAREA" Type="Self.TAREA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIO">
+        <PropertyRef Name="RUT" />
+      </Principal>
+      <Dependent Role="TAREA">
+        <PropertyRef Name="RUT" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="USUARIO_CARGO_FK">
+    <End Role="CARGO" Type="Self.CARGO" Multiplicity="1" />
+    <End Role="USUARIO" Type="Self.USUARIO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CARGO">
+        <PropertyRef Name="ID_CARGO" />
+      </Principal>
+      <Dependent Role="USUARIO">
+        <PropertyRef Name="ID_CARGO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="USUARIO_EMPRESA_FK">
+    <End Role="EMPRESA" Type="Self.EMPRESA" Multiplicity="1" />
+    <End Role="USUARIO" Type="Self.USUARIO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EMPRESA">
+        <PropertyRef Name="RUT_EMPRESA" />
+      </Principal>
+      <Dependent Role="USUARIO">
+        <PropertyRef Name="EMPRESA_RUT_EMPRESA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="USUARIO_ROL_FK">
+    <End Role="ROL" Type="Self.ROL" Multiplicity="1" />
+    <End Role="USUARIO" Type="Self.USUARIO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ROL">
+        <PropertyRef Name="ID_ROL" />
+      </Principal>
+      <Dependent Role="USUARIO">
+        <PropertyRef Name="ROL_ID_ROL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="USUARIO_USUARIO_FK">
+    <End Role="USUARIO" Type="Self.USUARIO" Multiplicity="0..1" />
+    <End Role="USUARIO1" Type="Self.USUARIO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIO">
+        <PropertyRef Name="RUT" />
+      </Principal>
+      <Dependent Role="USUARIO1">
+        <PropertyRef Name="RUT_JEFE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="CARGO" EntityType="Self.CARGO" Schema="PORTAFOLIO" store:Type="Tables" />
+    <EntitySet Name="EMPRESA" EntityType="Self.EMPRESA" Schema="PORTAFOLIO" store:Type="Tables" />
+    <EntitySet Name="PERFILAMIENTO" EntityType="Self.PERFILAMIENTO" Schema="PORTAFOLIO" store:Type="Tables" />
+    <EntitySet Name="PRIVILEGIO" EntityType="Self.PRIVILEGIO" Schema="PORTAFOLIO" store:Type="Tables" />
+    <EntitySet Name="PROCESO" EntityType="Self.PROCESO" Schema="PORTAFOLIO" store:Type="Tables" />
+    <EntitySet Name="REPORTE_INCIDENCIA" EntityType="Self.REPORTE_INCIDENCIA" Schema="PORTAFOLIO" store:Type="Tables" />
+    <EntitySet Name="ROL" EntityType="Self.ROL" Schema="PORTAFOLIO" store:Type="Tables" />
+    <EntitySet Name="TAREA" EntityType="Self.TAREA" Schema="PORTAFOLIO" store:Type="Tables" />
+    <EntitySet Name="USUARIO" EntityType="Self.USUARIO" Schema="PORTAFOLIO" store:Type="Tables" />
+    <AssociationSet Name="CARGO_RUT_EMPRESA_FK" Association="Self.CARGO_RUT_EMPRESA_FK">
+      <End Role="EMPRESA" EntitySet="EMPRESA" />
+      <End Role="CARGO" EntitySet="CARGO" />
+    </AssociationSet>
+    <AssociationSet Name="PERFILAMIENTO_EMPRESA_FK" Association="Self.PERFILAMIENTO_EMPRESA_FK">
+      <End Role="EMPRESA" EntitySet="EMPRESA" />
+      <End Role="PERFILAMIENTO" EntitySet="PERFILAMIENTO" />
+    </AssociationSet>
+    <AssociationSet Name="PERFILAMIENTO_PRIVILEGIO_FK" Association="Self.PERFILAMIENTO_PRIVILEGIO_FK">
+      <End Role="PRIVILEGIO" EntitySet="PRIVILEGIO" />
+      <End Role="PERFILAMIENTO" EntitySet="PERFILAMIENTO" />
+    </AssociationSet>
+    <AssociationSet Name="REPORTE_INCIDENCIA_TAREA_FK" Association="Self.REPORTE_INCIDENCIA_TAREA_FK">
+      <End Role="TAREA" EntitySet="TAREA" />
+      <End Role="REPORTE_INCIDENCIA" EntitySet="REPORTE_INCIDENCIA" />
+    </AssociationSet>
+    <AssociationSet Name="TAB_PERFILAMIENTO_CARGO_FK" Association="Self.TAB_PERFILAMIENTO_CARGO_FK">
+      <End Role="CARGO" EntitySet="CARGO" />
+      <End Role="PERFILAMIENTO" EntitySet="PERFILAMIENTO" />
+    </AssociationSet>
+    <AssociationSet Name="TAB_PERFILAMIENTO_ROL_FK" Association="Self.TAB_PERFILAMIENTO_ROL_FK">
+      <End Role="ROL" EntitySet="ROL" />
+      <End Role="PERFILAMIENTO" EntitySet="PERFILAMIENTO" />
+    </AssociationSet>
+    <AssociationSet Name="TAREA_PROCESO_FK" Association="Self.TAREA_PROCESO_FK">
+      <End Role="PROCESO" EntitySet="PROCESO" />
+      <End Role="TAREA" EntitySet="TAREA" />
+    </AssociationSet>
+    <AssociationSet Name="TAREA_TAREA_FK" Association="Self.TAREA_TAREA_FK">
+      <End Role="TAREA" EntitySet="TAREA" />
+      <End Role="TAREA1" EntitySet="TAREA" />
+    </AssociationSet>
+    <AssociationSet Name="TAREA_USUARIO_FK" Association="Self.TAREA_USUARIO_FK">
+      <End Role="USUARIO" EntitySet="USUARIO" />
+      <End Role="TAREA" EntitySet="TAREA" />
+    </AssociationSet>
+    <AssociationSet Name="USUARIO_CARGO_FK" Association="Self.USUARIO_CARGO_FK">
+      <End Role="CARGO" EntitySet="CARGO" />
+      <End Role="USUARIO" EntitySet="USUARIO" />
+    </AssociationSet>
+    <AssociationSet Name="USUARIO_EMPRESA_FK" Association="Self.USUARIO_EMPRESA_FK">
+      <End Role="EMPRESA" EntitySet="EMPRESA" />
+      <End Role="USUARIO" EntitySet="USUARIO" />
+    </AssociationSet>
+    <AssociationSet Name="USUARIO_ROL_FK" Association="Self.USUARIO_ROL_FK">
+      <End Role="ROL" EntitySet="ROL" />
+      <End Role="USUARIO" EntitySet="USUARIO" />
+    </AssociationSet>
+    <AssociationSet Name="USUARIO_USUARIO_FK" Association="Self.USUARIO_USUARIO_FK">
+      <End Role="USUARIO" EntitySet="USUARIO" />
+      <End Role="USUARIO1" EntitySet="USUARIO" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

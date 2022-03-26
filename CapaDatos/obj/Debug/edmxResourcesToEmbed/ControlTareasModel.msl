@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="TareasEntities">
+    <EntitySetMapping Name="CARGO">
+      <EntityTypeMapping TypeName="Model.CARGO">
+        <MappingFragment StoreEntitySet="CARGO">
+          <ScalarProperty Name="ID_CARGO" ColumnName="ID_CARGO" />
+          <ScalarProperty Name="NOM_CARGO" ColumnName="NOM_CARGO" />
+          <ScalarProperty Name="ESTADO_CARGO" ColumnName="ESTADO_CARGO" />
+          <ScalarProperty Name="RUT_EMPRESA" ColumnName="RUT_EMPRESA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EMPRESA">
+      <EntityTypeMapping TypeName="Model.EMPRESA">
+        <MappingFragment StoreEntitySet="EMPRESA">
+          <ScalarProperty Name="RUT_EMPRESA" ColumnName="RUT_EMPRESA" />
+          <ScalarProperty Name="NOMBRE_EMPRESA" ColumnName="NOMBRE_EMPRESA" />
+          <ScalarProperty Name="ESTADO_EMPRESA" ColumnName="ESTADO_EMPRESA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PERFILAMIENTO">
+      <EntityTypeMapping TypeName="Model.PERFILAMIENTO">
+        <MappingFragment StoreEntitySet="PERFILAMIENTO">
+          <ScalarProperty Name="ID_PERFIL" ColumnName="ID_PERFIL" />
+          <ScalarProperty Name="ESTADO_PERFIL" ColumnName="ESTADO_PERFIL" />
+          <ScalarProperty Name="ID_ROL" ColumnName="ID_ROL" />
+          <ScalarProperty Name="ID_CARGO" ColumnName="ID_CARGO" />
+          <ScalarProperty Name="RUT_EMPRESA" ColumnName="RUT_EMPRESA" />
+          <ScalarProperty Name="ID_PRIVILEGIO" ColumnName="ID_PRIVILEGIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRIVILEGIO">
+      <EntityTypeMapping TypeName="Model.PRIVILEGIO">
+        <MappingFragment StoreEntitySet="PRIVILEGIO">
+          <ScalarProperty Name="ID_PRIVILEGIO" ColumnName="ID_PRIVILEGIO" />
+          <ScalarProperty Name="NOM_PRIVILEGIO" ColumnName="NOM_PRIVILEGIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PROCESO">
+      <EntityTypeMapping TypeName="Model.PROCESO">
+        <MappingFragment StoreEntitySet="PROCESO">
+          <ScalarProperty Name="ID_PROCESO" ColumnName="ID_PROCESO" />
+          <ScalarProperty Name="NOM_PROCESO" ColumnName="NOM_PROCESO" />
+          <ScalarProperty Name="DESC_PROCESO" ColumnName="DESC_PROCESO" />
+          <ScalarProperty Name="FECHA_INICIO" ColumnName="FECHA_INICIO" />
+          <ScalarProperty Name="FECHA_FIN" ColumnName="FECHA_FIN" />
+          <ScalarProperty Name="ESTADO_PROCESO" ColumnName="ESTADO_PROCESO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPORTE_INCIDENCIA">
+      <EntityTypeMapping TypeName="Model.REPORTE_INCIDENCIA">
+        <MappingFragment StoreEntitySet="REPORTE_INCIDENCIA">
+          <ScalarProperty Name="ID_REPORTE" ColumnName="ID_REPORTE" />
+          <ScalarProperty Name="OBSERVACION_INCIDENCIA" ColumnName="OBSERVACION_INCIDENCIA" />
+          <ScalarProperty Name="FECHA_INCIDENCIA" ColumnName="FECHA_INCIDENCIA" />
+          <ScalarProperty Name="HORA_INCIDENCIA" ColumnName="HORA_INCIDENCIA" />
+          <ScalarProperty Name="TAREA_ID_TAREA" ColumnName="TAREA_ID_TAREA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ROL">
+      <EntityTypeMapping TypeName="Model.ROL">
+        <MappingFragment StoreEntitySet="ROL">
+          <ScalarProperty Name="ID_ROL" ColumnName="ID_ROL" />
+          <ScalarProperty Name="NOM_ROL" ColumnName="NOM_ROL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAREA">
+      <EntityTypeMapping TypeName="Model.TAREA">
+        <MappingFragment StoreEntitySet="TAREA">
+          <ScalarProperty Name="ID_TAREA" ColumnName="ID_TAREA" />
+          <ScalarProperty Name="NOMBRE_TAREA" ColumnName="NOMBRE_TAREA" />
+          <ScalarProperty Name="FECHA_PROCESO" ColumnName="FECHA_PROCESO" />
+          <ScalarProperty Name="FECHA_FIN" ColumnName="FECHA_FIN" />
+          <ScalarProperty Name="DESCRIPCION_TAREA" ColumnName="DESCRIPCION_TAREA" />
+          <ScalarProperty Name="ADJUNTO" ColumnName="ADJUNTO" />
+          <ScalarProperty Name="ESTADO_TAREA" ColumnName="ESTADO_TAREA" />
+          <ScalarProperty Name="FECHA_TERMINO_REAL" ColumnName="FECHA_TERMINO_REAL" />
+          <ScalarProperty Name="PORCENTAJE" ColumnName="PORCENTAJE" />
+          <ScalarProperty Name="ID_PROCESO" ColumnName="ID_PROCESO" />
+          <ScalarProperty Name="RUT" ColumnName="RUT" />
+          <ScalarProperty Name="ID_SUB_TAREA" ColumnName="ID_SUB_TAREA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USUARIO">
+      <EntityTypeMapping TypeName="Model.USUARIO">
+        <MappingFragment StoreEntitySet="USUARIO">
+          <ScalarProperty Name="RUT" ColumnName="RUT" />
+          <ScalarProperty Name="P_NOMBRE" ColumnName="P_NOMBRE" />
+          <ScalarProperty Name="SE_NOMBRE" ColumnName="SE_NOMBRE" />
+          <ScalarProperty Name="P_APELLIDO" ColumnName="P_APELLIDO" />
+          <ScalarProperty Name="SE_APELLIDO" ColumnName="SE_APELLIDO" />
+          <ScalarProperty Name="TELEFONO" ColumnName="TELEFONO" />
+          <ScalarProperty Name="SEXO" ColumnName="SEXO" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="CLAVE" ColumnName="CLAVE" />
+          <ScalarProperty Name="ESTADO_CUENTA" ColumnName="ESTADO_CUENTA" />
+          <ScalarProperty Name="ID_CARGO" ColumnName="ID_CARGO" />
+          <ScalarProperty Name="ROL_ID_ROL" ColumnName="ROL_ID_ROL" />
+          <ScalarProperty Name="EMPRESA_RUT_EMPRESA" ColumnName="EMPRESA_RUT_EMPRESA" />
+          <ScalarProperty Name="RUT_JEFE" ColumnName="RUT_JEFE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

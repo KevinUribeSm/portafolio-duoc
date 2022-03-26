@@ -1,0 +1,13 @@
+C:\Users\franc\Desktop\portafolio de titulo\proyecto\WEB\test_1\CapaDato\obj\Debug\CapaDato.csproj.AssemblyReference.cache
+C:\Users\franc\Desktop\portafolio de titulo\proyecto\WEB\test_1\CapaDato\obj\Debug\CapaDato.csproj.CoreCompileInputs.cache
+C:\Users\franc\Desktop\portafolio de titulo\proyecto\WEB\test_1\CapaDato\bin\Debug\CapaDato.dll
+C:\Users\franc\Desktop\portafolio de titulo\proyecto\WEB\test_1\CapaDato\bin\Debug\CapaDato.pdb
+C:\Users\franc\Desktop\portafolio de titulo\proyecto\WEB\test_1\CapaDato\bin\Debug\CapaConexion.dll
+C:\Users\franc\Desktop\portafolio de titulo\proyecto\WEB\test_1\CapaDato\bin\Debug\CapaDatos.dll
+C:\Users\franc\Desktop\portafolio de titulo\proyecto\WEB\test_1\CapaDato\bin\Debug\Oracle.DataAccess.dll
+C:\Users\franc\Desktop\portafolio de titulo\proyecto\WEB\test_1\CapaDato\bin\Debug\CapaConexion.pdb
+C:\Users\franc\Desktop\portafolio de titulo\proyecto\WEB\test_1\CapaDato\bin\Debug\CapaDatos.pdb
+C:\Users\franc\Desktop\portafolio de titulo\proyecto\WEB\test_1\CapaDato\bin\Debug\CapaDatos.dll.config
+C:\Users\franc\Desktop\portafolio de titulo\proyecto\WEB\test_1\CapaDato\obj\Debug\CapaDato.csproj.CopyComplete
+C:\Users\franc\Desktop\portafolio de titulo\proyecto\WEB\test_1\CapaDato\obj\Debug\CapaDato.dll
+C:\Users\franc\Desktop\portafolio de titulo\proyecto\WEB\test_1\CapaDato\obj\Debug\CapaDato.pdb
